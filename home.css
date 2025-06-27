@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e2d47;
+  color: #ffffff;
+}
+
+.top {
+  background-color: #1e2d47;
+  padding: 1px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.app-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.app-title span {
+  color: #4a90e2;
+}
+
+.NavSection {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #243557;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+}
+
+
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+  color: #dbeafe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.nav-item:hover {
+  background-color: #4a90e2;
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.feed {
+  margin-left: 260px;
+  padding: 120px 60px 40px 60px;
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: #1e2d47;
+
+}
+
+.story {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.story h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #1e2d47;
+}
+
+.story p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #374151;
+}

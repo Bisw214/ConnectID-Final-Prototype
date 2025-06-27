@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.menu button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dropdown-form {
+  display: none;
+  margin: 10px auto;
+  width: 250px;
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <button onclick="toggleForm('login-form')">Login</button>
+        <button onclick="toggleForm('signup-form')">Signup</button>
+      
+        <div id="login-form" class="dropdown-form">
+          <form>
+            <input type="text" placeholder="Username"><br>
+            <input type="password" placeholder="Password"><br>
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      
+        <div id="signup-form" class="dropdown-form">
+          <form>
+            <input type="text" placeholder="Name"><br>
+            <input type="email" placeholder="Email"><br>
+            <input type="password" placeholder="Password"><br>
+            <button type="submit">Signup</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        function toggleForm(formId) {
+          const forms = document.querySelectorAll('.dropdown-form');
+          forms.forEach(form => {
+            form.style.display = (form.id === formId && form.style.display !== 'block') ? 'block' : 'none';
+          });
+        }
+      </script>
+</body>
+</html>
